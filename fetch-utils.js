@@ -7,3 +7,4 @@ export async function getCars() {
     const response = await client.from('cars_list').select('*');
     return response.data;
 }
+
