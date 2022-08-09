@@ -1,7 +1,9 @@
 // import functions and grab DOM elements
 
-// let state
+import { getCars } from './fetch-utils.js';
 
+// let state
+getCars();
 // set event listeners 
   // get user input
   // use user input to update state 
