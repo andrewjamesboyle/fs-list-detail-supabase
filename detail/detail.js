@@ -7,7 +7,6 @@ const params = new URLSearchParams(window.location.search);
 
 async function loadDetails() {
     const data = await getCar(params.get('id'));
-    console.log('data', data);
     const carDetails = renderCarDetails(data);
     carDetailContainer.append(carDetails);
 }

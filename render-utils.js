@@ -33,12 +33,9 @@ export function renderCarDetails(car) {
     modelEl.textContent = car.model;
     yearEl.textContent = car.year;
     colorEl.textContent = car.color;
-    console.log('car-image', car.image);
-    console.log('car', car);
     imgEl.src = `../assets/${car.image}.png`;
 
     carDetailEl.append(makeEl, modelEl, yearEl, colorEl, imgEl);
 
     return carDetailEl;
 }
-
