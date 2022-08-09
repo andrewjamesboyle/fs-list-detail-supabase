@@ -8,3 +8,7 @@ export async function getCars() {
     return response.data;
 }
 
+export async function getCar(id) {
+    const response = await client.from('cars_list').select('*').match({ id }).single();
+    return response.data;
+}
