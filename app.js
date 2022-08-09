@@ -14,6 +14,7 @@ async function loadCars() {
 }
 
 loadCars();
+
 // set event listeners 
   // get user input
   // use user input to update state 
